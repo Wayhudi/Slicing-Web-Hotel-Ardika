@@ -1,0 +1,664 @@
+/* highlight warna teks saat select */
+::selection {
+    background-color: #ff9e21;
+    color: #ffffff;
+}
+
+/* Font */
+.roboto {
+    font-family: "Roboto", sans-serif;
+}
+
+.aboreto {
+    font-family: "Aboreto", cursive;
+}
+
+/* Navbar Style */
+.btn-book {
+    background-color: #ff9e21;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+}
+
+.btn-book:hover {
+    background-color: #e68a1c;
+    color: #ffffff;
+}
+
+.nav-item a{
+    font-family: "Roboto", sans-serif;
+    margin-right: 1rem;
+}
+
+/* Mobile navbar styling */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background-color: #ffffff !important;
+        border: 1px solid #dee2e6 !important;
+        border-radius: 5px;
+        margin-top: 10px;
+        padding: 15px;
+    }
+    
+    .navbar-nav .nav-link {
+        padding: 10px 0;
+        border-bottom: 1px solid #ff9e21 !important;
+    }
+    
+    .navbar-nav .nav-link:last-child {
+        border-bottom: none;
+    }
+    
+    .d-flex {
+        margin-top: 15px;
+        justify-content: center;
+    }
+}
+
+/* Section Hero Style */
+.hero {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.hero .container {
+    padding: 0 !important;
+    max-width: 100% !important;
+}
+
+/* Carousel specific styling */
+.carousel {
+    height: 100vh;
+    width: 100%;
+}
+
+.carousel-inner {
+    height: 100vh;
+    width: 100%;
+}
+
+.carousel-item {
+    height: 100vh;
+    width: 100%;
+}
+
+.hero1, .hero2, .hero3, .hero4 {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    padding: 0px !important;
+    margin: 0 !important;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero1 {
+    background-image: url('img/home-overlay/Home1.png');
+}
+
+.hero2 {
+    background-image: url('img/home-overlay/Home2.png');
+}
+
+.hero3 {
+    background-image: url('img/home-overlay/Home3.png');
+}
+
+.hero4 {
+    background-image: url('img/home-overlay/Home4.png');
+}
+
+/* Carousel Controls Styling */
+/* .carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+    opacity: 0.8;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 1;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-size: 2rem 2rem;
+} */
+
+/* Carousel Indicators */
+.carousel-indicators {
+    bottom: 30px;
+}
+
+.carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid #ffffff;
+}
+
+.carousel-indicators button.active {
+    background-color: #ff9e21;
+    border-color: #ff9e21;
+}
+
+/* Pagination style */
+.pagination-dot-home {
+    display: inline-block;
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+    background-color: transparent !important;
+    cursor: pointer;
+    transition: 0.5s ease;
+    border: 1px solid #ff9f2196 !important;
+    background-color: #ffae4596 !important;
+}
+
+.pagination-dot-home.active {
+    background-color: #ff9e21 !important;
+    border: none !important;
+    width: 12px !important;
+    height: 12px !important;
+    
+}
+
+.pagination-dot-home:hover {
+    background-color: #ff9e21 !important;
+    transition: 0.5s ease-out;
+    border: #ff9e21;
+}
+
+.home .row {
+    width: 100%;
+    margin: 0;
+    padding-top: 80px; /* Offset untuk navbar fixed-top */
+}
+
+.home h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-family: "Aboreto", cursive;
+    font-weight: 200;
+    letter-spacing: 2px !important;
+    }
+
+.home .row {
+    width: 100%;
+    margin: 0;
+    padding-top: 80px; /* Offset untuk navbar fixed-top */
+}
+
+.home h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-family: "Aboreto", cursive;
+    font-weight: 200;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.home h3 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    font-family: "Roboto", sans-serif;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+/* Responsive Hero */
+@media (max-width: 768px) {
+    .home h1 {
+        font-size: 32px;
+    }
+    
+    .home h5 {
+        font-size: 18px;
+    }
+    
+    .home .row {
+        padding-top: 100px; /* Lebih besar untuk mobile karena navbar bisa lebih tinggi */
+    }
+}
+
+@media (max-width: 576px) {
+    .home h1 {
+        font-size: 28px;
+    }
+    
+    .home h5 {
+        font-size: 16px;
+    }
+}
+
+/* Check Date Section Style */
+
+
+.check-date .form-control {
+    border-radius: 8px;
+    border: 2px solid #dee2e6;
+    padding: 12px 15px;
+    font-size: 16px;
+    min-width: 180px;
+}
+
+.check-date .form-control:focus {
+    border-color: #ff9e21;
+    box-shadow: 0 0 0 0.2rem rgba(255, 158, 33, 0.25);
+}
+
+.check-date .d-flex {
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.check-date .bi-arrow-down {
+    color: #ff9e21;
+    font-size: 1.5rem !important;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    padding: 0 10px;
+}
+
+.check-date .text label {
+    font-weight: 600;
+    color: #333;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.check-date .text label:hover {
+    color: #ff9e21;
+}
+
+/* Responsive Check Date */
+@media (max-width: 768px) {
+    .check-date .d-flex {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .check-date .form-control {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .check-date .bi-arrow-right {
+        transform: rotate(90deg);
+        font-size: 1.8rem !important;
+    }
+    
+    .check-date .btn-book {
+        margin: 0 !important;
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .check-date .text {
+        display: flex;
+        justify-content: space-around;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
+
+/* Welcome Section Style */
+.welcome {
+    padding: 40px 0;
+}
+
+.subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-transform: uppercase !important;
+    color: #727272;
+    letter-spacing: 10px !important;
+    font-family: "Roboto", sans-serif;
+}
+
+.head-text{
+    font-family: "Aboreto", cursive;
+    font-weight: 200;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    color: #000;
+}
+.welcome p {
+    font-size: 18px;
+    color: #4d4d4d;
+    padding: 20px 240px;
+}
+
+/* Special Offers Section */
+.cream-bg {
+    padding: 60px 0;
+    background-color: #FF9E210A;
+}
+
+.special-card {
+    height: 420px;
+    width: 360px;
+    padding: 50px 10px !important;
+    overflow: hidden;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+
+}
+
+.special-card:hover {
+    transform: translateY(-10px);
+}
+
+.card1 {
+    background-image: url('img/Special-Offers/special1.jpg');
+}
+
+.card2 {
+    background-image: url('img/Special-Offers/special2.jpg');
+}
+
+.card3 {
+    background-image: url('img/Special-Offers/special3.jpg');
+}
+
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.048), rgba(0, 0, 0, 0.4));
+    padding: 30px;
+    transition: background 0.3s ease;
+}
+
+.card-overlay:hover {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.397), rgba(0, 0, 0, 0.4));
+}
+
+.card-content {
+    text-align: center;
+    color: white;
+    max-width: 300px;
+}
+
+.offer-label {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #ffffff;
+    font-weight: 400;
+    margin-bottom: 60px;
+    font-family: "Roboto", sans-serif;
+}
+
+.offer-title {
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    line-height: 1.2;
+    font-family: "Aboreto", cursive;
+}
+
+.btn-details {
+    background-color: #ff9e21;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin-top: 85px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    font-family: "Roboto", sans-serif;
+}
+
+.btn-details:hover {
+    background-color: #ffa93f;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+
+/* Accomodation Section Style */
+.accommodation-title,
+.Facilities-title {
+    font-size: 26px;
+    font-weight: 500;
+    color: #FF9E21;
+    margin-bottom: 15px;
+    font-family: "Aboreto", cursive;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.accommodation-description,
+.Facilities-description {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    font-family: "Roboto", sans-serif;
+    flex-grow: 1;
+}
+
+.btn-details {
+    background-color: #ff9e21;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin-top: 85px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    font-family: "Roboto", sans-serif;
+}
+
+.acco-img{
+    width: 100%;
+    height: auto;
+}
+
+.content-acco{
+    margin: -100px 20px;
+    padding: 20px 25px;
+    position: relative;
+    text-align: center;
+    background-color: #ffffff !important;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.315);
+    z-index: 999;
+    /* margin-top: -100px; melebihi gambar */
+}
+
+.btn-book-room {
+    background-color: #ff9e21;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 18px;
+    margin-right: 5px ;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    font-family: "Roboto", sans-serif;
+}
+
+.btn-book-room:hover {
+    background-color: #e68a1c;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.btn-details-room {
+    background-color: transparent;
+    color: #ff9e21;
+    border: none;
+    padding: 12px 0;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+}
+
+.btn-details-room:hover {
+    color: #e68a1c;
+    text-decoration: underline;
+}
+
+.btn-details-room i {
+    margin-left: 8px;
+    font-size: 12px;
+    transition: transform 0.3s ease;
+}
+
+.btn-details-room:hover i {
+    transform: translateX(5px);
+}
+
+/* Facilities section Style */
+
+/* Pagination Dots */
+.pagination-dot {
+    display: inline-block;
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+    background-color: transparent !important;
+    cursor: pointer;
+    transition: 0.5s ease;
+    border: 1px solid rgb(102, 102, 102) !important;
+    background-color: rgba(115, 115, 115, 0.567) !important;
+}
+
+.pagination-dot.active {
+    background-color: #000000 !important;
+    border: none !important;
+    width: 12px !important;
+    height: 12px !important;
+    
+}
+
+.pagination-dot:hover {
+    background-color: #000000 !important;
+    transition: 0.5s ease-out;
+    border: rgba(255, 255, 255, 0.074);
+}
+
+/* Carousel Controls */
+
+.control-style {
+    background-color: rgb(0, 0, 0);
+    height: 60px;
+    width: 60px;
+    margin-top: 13rem;
+}
+
+.control-style:hover {
+    background-color: #ff9e21;
+}
+
+/* Location section Style */
+.contact{
+    font-family: "Roboto", sans-serif;
+    font-size: 18px !important;
+}
+.contact .bi-whatsapp , .bi-send-fill{
+    color: #ff9e21 !important;
+    margin-right: 10px;
+    font-size: 28px !important;
+}
+
+/* Footers Style */
+.footer {
+    background-color: #f9f9f9;
+    color: #000;
+}
+
+.footer-head-text{
+    font-family: "Aboreto", cursive;
+    font-weight: 500;
+    font-size: 21px;
+    color: #000;
+    padding: 10px 0;
+}
+
+.footer-text{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    color: #334155;
+    padding: 5px 0;
+}
+
+.footer-info{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    color: #FF9E21;
+}
+
+.icon{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin-top: 10px;
+}
+
+.icon a{
+    color: #000000;
+    font-size: 20px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.icon a:hover{
+    color: #e68a1c;
+}
+
+.bi-facebook,
+.bi-instagram,
+.bi-twitter{
+    font-size: 35px;
+}
+
+.copyright{
+    font-family: "Roboto", sans-serif;
+    padding: 30px 0;
+    background-color: #FF9E21;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright p {
+    margin: 0;
+    font-size: 16px;
+    color: #334155;
+    text-align: center;
+}
